@@ -1,0 +1,64 @@
+/****************************************
+ *     CUTE CSS OPENSOURCE STYLESHEET   *
+ *            VERSION 1.0.0             *
+ *              AUTHOR: MM              *
+ *         CREATED: 2022-07-02          *
+ *     EMAIL: MUFAAD@MSOLUTIONS.LK      *
+ ****************************************/
+.cute-group {
+  margin: 2px; }
+
+.cute-input[type="checkbox"].switch {
+  position: absolute;
+  left: -9999px;
+  top: -9999px; }
+
+.cute-input[type="checkbox"].switch:checked.danger + label::before,
+.cute-input[type="checkbox"].switch:checked.danger + label::after {
+  background-color: #e60606; }
+
+.cute-input[type="checkbox"].switch:checked.primary + label::before,
+.cute-input[type="checkbox"].switch:checked.primary + label::after {
+  background-color: #165ba5; }
+
+.cute-input[type="checkbox"].switch:checked.success + label::before,
+.cute-input[type="checkbox"].switch:checked.success + label::after {
+  background-color: #0d9634; }
+
+.cute-input[type="checkbox"].switch:checked.warning + label::before,
+.cute-input[type="checkbox"].switch:checked.warning + label::after {
+  background-color: #e8c82a; }
+
+.cute-input[type="checkbox"].switch:checked + label::after {
+  transform: translate(100%);
+  transition: background-color 200ms ease-in-out, transform 200ms ease-in-out; }
+
+.cute-input[type="checkbox"].switch:focus + label::before {
+  outline: rgba(81, 81, 81, 0.545) solid 1px; }
+
+.cute-input[type="checkbox"].switch + label {
+  display: flex;
+  position: relative;
+  cursor: pointer;
+  align-items: center; }
+
+.cute-input[type="checkbox"].switch + label::before {
+  content: "";
+  width: 3em;
+  height: 1.5em;
+  margin-right: 0.5em;
+  border-radius: 2em;
+  opacity: 0.3;
+  background-color: #ccc;
+  transition: background-color 200ms ease-in-out; }
+
+.cute-input[type="checkbox"].switch + label::after {
+  content: "";
+  position: absolute;
+  left: 0.1em;
+  width: 1.4em;
+  height: 1.3em;
+  border-radius: 100%;
+  opacity: 1;
+  background-color: silver;
+  transition: background-color 200ms ease-in-out, transform 200ms ease-in-out; }
